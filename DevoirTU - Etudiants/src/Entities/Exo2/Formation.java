@@ -21,15 +21,25 @@ public class Formation
     public void AjouterParticipant(Participant unParticipant)
     {
         lesParticipants.add(unParticipant);
+
     }
 
     // Cette méthode permet de compter le nombre de participants
     // réellement présents à la formation.
     public int GetNombreDePresents()
     {
-        // A compléter ici
+        int compteur =0;
+        int ingrement = 0;
+        while (compteur<=lesParticipants.size())
+        {
+            if (lesParticipants.get(compteur).isEstPresent() == true)
+            {
+                ingrement = ingrement + 1;
+            }
 
-        return 0;
+          compteur = compteur+1;
+        }
+        return ingrement;
     }
 
     // Cette méthode permet de calculer le montant total
@@ -38,9 +48,19 @@ public class Formation
     // On rembourse 1.89 du KM
     public double CalculerFraisRemboursementKilometriques()
     {
-        // A compléter ici
-
-        return 0;
+        int addition = 0;
+        int compteur = 0;
+        double multiplication = 0;
+        for (compteur<=lesParticipants.size())
+        {
+            if (lesParticipants.get(compteur).isEstPresent() == true)
+            {
+                addition = lesParticipants.get(compteur).getNbKm() + addition;
+            }
+            compteur = compteur +1;
+        }
+        multiplication = addition *1.89;
+        return multiplication;
     }
 
     // Cette méthode permet de calculer le taux de présence

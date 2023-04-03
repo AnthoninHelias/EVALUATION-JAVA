@@ -35,14 +35,14 @@ public class ModelJTable extends AbstractTableModel
     public  void loadDatasCaptage(ArrayList<Captage> uneListe){
         colonnes = new String[]{"IdCaptage","Nom", "Hauteur","DébitMaximum"};
         lignes = new Object[uneListe.size()][4];
-        int i = 0;
+        int ingrement = 0;
         for (Captage captage: uneListe){
-            lignes[i][0] = captage.getIdCaptage();
-            lignes[i][1] = captage.getNom();
-            lignes[i][2] = captage.getHauteur();
-            lignes[i][3] = captage.getDébitMaximum();
+            lignes[ingrement][0] = captage.getIdCaptage();
+            lignes[ingrement][1] = captage.getNom();
+            lignes[ingrement][2] = captage.getHauteur();
+            lignes[ingrement][3] = captage.getDébitMaximum();
 
-            i++;
+            ingrement++;
         }
     }
 }

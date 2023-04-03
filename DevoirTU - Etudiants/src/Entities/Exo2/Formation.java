@@ -51,7 +51,7 @@ public class Formation
         int addition = 0;
         int compteur = 0;
         double multiplication = 0;
-        for (compteur<=lesParticipants.size())
+        while (compteur<=lesParticipants.size())
         {
             if (lesParticipants.get(compteur).isEstPresent() == true)
             {
@@ -67,8 +67,7 @@ public class Formation
     // par rapport au nombre d'inscrits
     public double TauxDePresence()
     {
-        // A compléter ici
-        return 0;
+
     }
 
     // Cette méthode permet de calculer le bénéfice de la formation.

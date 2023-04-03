@@ -7,7 +7,7 @@ public class Cuve extends Captage implements IVolume
     private int largeur;
 
 
-    public Cuve(int idCaptage, String nom, String hauteur, String débitMaximum, int longeur, int largeur) {
+    public Cuve(int idCaptage, String nom, int hauteur, int débitMaximum, int longeur, int largeur) {
         super(idCaptage, nom, hauteur, débitMaximum);
         this.longeur = longeur;
         this.largeur = largeur;

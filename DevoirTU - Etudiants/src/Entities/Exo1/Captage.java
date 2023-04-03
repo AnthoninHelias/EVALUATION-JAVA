@@ -4,29 +4,13 @@ public class Captage
 {
     private int idCaptage;
     private String nom;
-    private String hauteur;
-    private String débitMaximum;
+    private int hauteur;
+    private int débitMaximum;
 
-    public Captage(int idCaptage, String nom, String hauteur, String débitMaximum) {
+    public Captage(int idCaptage, String nom, int hauteur, int débitMaximum) {
         this.idCaptage = idCaptage;
         this.nom = nom;
         this.hauteur = hauteur;
-        this.débitMaximum = débitMaximum;
-    }
-
-    public String getHauteur() {
-        return hauteur;
-    }
-
-    public void setHauteur(String hauteur) {
-        this.hauteur = hauteur;
-    }
-
-    public String getDébitMaximum() {
-        return débitMaximum;
-    }
-
-    public void setDébitMaximum(String débitMaximum) {
         this.débitMaximum = débitMaximum;
     }
 
@@ -46,22 +30,25 @@ public class Captage
         this.nom = nom;
     }
 
-    public String getMètre() {
-        return mètre;
+    public int getHauteur() {
+        return hauteur;
     }
 
-    public void setMètre(String mètre) {
-        this.mètre = mètre;
+    public void setHauteur(int hauteur) {
+        this.hauteur = hauteur;
     }
 
-    public String getLitres() {
-        return litres;
+    public int getDébitMaximum() {
+        return débitMaximum;
     }
 
-    public void setLitres(String litres) {
-        this.litres = litres;
+    public void setDébitMaximum(int débitMaximum) {
+        this.débitMaximum = débitMaximum;
     }
 
+    getDescription(){
+
+}
     compareTo(Captage)
     {
 

@@ -4,7 +4,8 @@ public class Forage extends Captage implements IVolume
 {
     private int diametre;
 
-    public Forage(int idCaptage, String nom, String hauteur, String débitMaximum, int diametre) {
+
+    public Forage(int idCaptage, String nom, int hauteur, int débitMaximum, int diametre) {
         super(idCaptage, nom, hauteur, débitMaximum);
         this.diametre = diametre;
     }

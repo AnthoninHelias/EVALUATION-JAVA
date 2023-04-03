@@ -1,12 +1,14 @@
 package Entities.Exo1;
+//import src/Entities/Exo1/IVolume.java;
 
-public class Cuve extends Captage
+public class Cuve extends Captage implements IVolume
 {
     private int longeur;
     private int largeur;
 
-    public Cuve(int idCaptage, String nom, String mètre, String litres, int longeur, int largeur) {
-        super(idCaptage, nom, mètre, litres);
+
+    public Cuve(int idCaptage, String nom, String hauteur, String débitMaximum, int longeur, int largeur) {
+        super(idCaptage, nom, hauteur, débitMaximum);
         this.longeur = longeur;
         this.largeur = largeur;
     }
@@ -26,4 +28,5 @@ public class Cuve extends Captage
     public void setLargeur(int largeur) {
         this.largeur = largeur;
     }
+
 }
